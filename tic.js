@@ -1,5 +1,5 @@
 // Function called whenever user tabs or clicks on any box
-function myfunc() {
+const myfunc = () => {
 
 	// Setting DOM to all boxes or input field
 	let b1, b2, b3, b4, b5, b6, b7, b8, b9;
@@ -14,7 +14,7 @@ function myfunc() {
 	b9 = document.getElementById("b9").value;
 
 	// Check if Player X won and disable all fields
-	if ((b1 == '🍌') && (b2 == '🍌') && (b3 == '🍌')) {
+	if ((b1 === '🍌') && (b2 === '🍌') && (b3 === '🍌')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍌";
 		document.getElementById("b4").disabled = true;
 		document.getElementById("b5").disabled = true;
@@ -24,7 +24,7 @@ function myfunc() {
 		document.getElementById("b9").disabled = true;
 		// window.alert('Player X won');
 	}
-	else if (( b1 == '🍌') && (b4 == '🍌') && (b7 == '🍌')) {
+	else if (( b1 === '🍌') && (b4 === '🍌') && (b7 === '🍌')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍌";
 		document.getElementById("b2").disabled = true;
 		document.getElementById("b3").disabled = true;
@@ -35,7 +35,7 @@ function myfunc() {
 
 		// window.alert('Player X won');
 	}
-	else if ((b7 == '🍌') && (b8 == '🍌') && (b9 == '🍌')) {
+	else if ((b7 === '🍌') && (b8 === '🍌') && (b9 === '🍌')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍌";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b2").disabled = true;
@@ -45,7 +45,7 @@ function myfunc() {
 		document.getElementById("b6").disabled = true;
 		// window.alert('Player X won');
 	}
-	else if ((b3 == '🍌') && (b6 == '🍌') && (b9 == '🍌')) {
+	else if ((b3 === '🍌') && (b6 === '🍌') && (b9 === '🍌')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍌";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b2").disabled = true;
@@ -55,7 +55,7 @@ function myfunc() {
 		document.getElementById("b8").disabled = true;
 		// window.alert('Player X won');
 	}
-	else if ((b1 == '🍌') && (b5 == '🍌') && (b9 == '🍌')) {
+	else if ((b1 === '🍌') && (b5 === '🍌') && (b9 === '🍌')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍌";
 		document.getElementById("b2").disabled = true;
 		document.getElementById("b3").disabled = true;
@@ -65,7 +65,7 @@ function myfunc() {
 		document.getElementById("b8").disabled = true;
 		// window.alert('Player X won');
 	}
-	else if ((b3 == '🍌') && (b5 == '🍌') && (b7 == '🍌')) {
+	else if ((b3 === '🍌') && (b5 === '🍌') && (b7 === '🍌')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍌";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b2").disabled = true;
@@ -75,7 +75,7 @@ function myfunc() {
 		document.getElementById("b9").disabled = true;
 		// window.alert('Player X won');
 	}
-	else if ((b2 == '🍌') && (b5 == '🍌') && (b8 == '🍌')) {
+	else if ((b2 === '🍌') && (b5 === '🍌') && (b8 === '🍌')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍌";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b3").disabled = true;
@@ -85,7 +85,7 @@ function myfunc() {
 		document.getElementById("b9").disabled = true;
 		// window.alert('Player X won');
 	}
-	else if ((b4 == '🍌') && (b5 == '🍌') && (b6 == '🍌')) {
+	else if ((b4 === '🍌') && (b5 === '🍌') && (b6 === '🍌')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍌";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b2").disabled = true;
@@ -97,7 +97,7 @@ function myfunc() {
 	}
 
 	// Check whether Player O won and disable all fields
-	else if ((b1 == '🍄') && (b2 == '🍄') && (b3 == '🍄')) {
+	else if ((b1 === '🍄') && (b2 === '🍄') && (b3 === '🍄')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍄";
 		document.getElementById("b4").disabled = true;
 		document.getElementById("b5").disabled = true;
@@ -107,7 +107,7 @@ function myfunc() {
 		document.getElementById("b9").disabled = true;
 		// window.alert('Player 0 won');
 	}
-	else if ((b1 == '🍄') && (b4 == '🍄') && (b7 == '🍄')) {
+	else if ((b1 === '🍄') && (b4 === '🍄') && (b7 === '🍄')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍄";
 		document.getElementById("b2").disabled = true;
 		document.getElementById("b3").disabled = true;
@@ -117,7 +117,7 @@ function myfunc() {
 		document.getElementById("b9").disabled = true;
 		// window.alert('Player 0 won');
 	}
-	else if ((b7 == '🍄') && (b8 == '🍄') && (b9 == '🍄')) {
+	else if ((b7 === '🍄') && (b8 === '🍄') && (b9 === '🍄')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍄";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b2").disabled = true;
@@ -127,7 +127,7 @@ function myfunc() {
 		document.getElementById("b6").disabled = true;
 		// window.alert('Player 0 won');
 	}
-	else if ((b3 == '🍄') && (b6 == '🍄') && (b9 == '🍄')) {
+	else if ((b3 === '🍄') && (b6 === '🍄') && (b9 ==='🍄')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍄";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b2").disabled = true;
@@ -137,7 +137,7 @@ function myfunc() {
 		document.getElementById("b8").disabled = true;
 		// window.alert('Player 0 won');
 	}
-	else if ((b1 == '🍄') && (b5 == '🍄') && (b9 == '🍄')) {
+	else if ((b1 === '🍄') && (b5 === '🍄') && (b9 === '🍄')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍄";
 		document.getElementById("b2").disabled = true;
 		document.getElementById("b3").disabled = true;
@@ -147,7 +147,7 @@ function myfunc() {
 		document.getElementById("b8").disabled = true;
 		// window.alert('Player 0 won');
 	}
-	else if ((b3 == '🍄') && (b5 == '🍄') && (b7 == '🍄')) {
+	else if ((b3 === '🍄') && (b5 === '🍄') && (b7 === '🍄')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍄";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b2").disabled = true;
@@ -157,7 +157,7 @@ function myfunc() {
 		document.getElementById("b9").disabled = true;
 		// window.alert('Player 0 won');
 	}
-	else if ((b2 == '🍄') && (b5 == '🍄') && (b8 == '🍄')) {
+	else if ((b2 === '🍄') && (b5 === '🍄') && (b8 === '🍄')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍄";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b3").disabled = true;
@@ -167,7 +167,7 @@ function myfunc() {
 		document.getElementById("b9").disabled = true;
 		// window.alert('Player 0 won');
 	}
-	else if ((b4 == '🍄') && (b5 == '🍄') && (b6 == '🍄')) {
+	else if ((b4 === '🍄') && (b5 === '🍄') && (b6 === '🍄')) {
 		document.getElementById('print').innerHTML = "WINNER: 🍄";
 		document.getElementById("b1").disabled = true;
 		document.getElementById("b2").disabled = true;
@@ -179,12 +179,12 @@ function myfunc() {
 	}
 
 	// Here, Checking about Tie
-	else if ((b1 == '🍌' || b1 == '🍄') && (b2 == '🍌'
-		|| b2 == '🍄') && (b3 == '🍌' || b3 == '🍄') &&
-		(b4 == '🍌' || b4 == '🍄') && (b5 == '🍌' ||
-		b5 == '🍄') && (b6 == '🍌' || b6 == '🍄') &&
-		(b7 == '🍌' || b7 == '🍄') && (b8 == '🍌' ||
-		b8 == '🍄') && (b9 == '🍌' || b9 == '🍄')) {
+	else if ((b1 === '🍌' || b1 === '🍄') && (b2 === '🍌'
+		|| b2 === '🍄') && (b3 === '🍌' || b3 === '🍄') &&
+		(b4 === '🍌' || b4 === '🍄') && (b5 === '🍌' ||
+		b5 === '🍄') && (b6 === '🍌' || b6 === '🍄') &&
+		(b7 === '🍌' || b7 === '🍄') && (b8 === '🍌' ||
+		b8 === '🍄') && (b9 === '🍌' || b9 === '🍄')) {
 			document.getElementById('print')
 				.innerHTML = "Match Tie";
 			// window.alert('Match Tie');
@@ -193,8 +193,8 @@ function myfunc() {
 }
 
 // Function to reset game
-function myfunc_2() {
-	location.reload();
+const myfunc_2 = () => {
+	window.location.reload();
 	document.getElementById('b1').value = '';
 	document.getElementById("b2").value = '';
 	document.getElementById("b3").value = '';
@@ -208,9 +208,9 @@ function myfunc_2() {
 }
 
 // Here onwards, functions use flags to check which player's turn is it and disable the box
-flag = 1;
-function myfunc_3() {
-	if (flag == 1) {
+let flag = 1;
+ const myfunc_3 = () => {
+	if (flag === 1) {
 		document.getElementById("b1").value = "🍌";
 		document.getElementById("b1").disabled = true;
 		flag = 0;
@@ -222,8 +222,8 @@ function myfunc_3() {
 	}
 }
 
-function myfunc_4() {
-	if (flag == 1) {
+const myfunc_4 = () => {
+	if (flag === 1) {
 		document.getElementById("b2").value = "🍌";
 		document.getElementById("b2").disabled = true;
 		flag = 0;
@@ -235,8 +235,8 @@ function myfunc_4() {
 	}
 }
 
-function myfunc_5() {
-	if (flag == 1) {
+const myfunc_5 = () => {
+	if (flag === 1) {
 		document.getElementById("b3").value = "🍌";
 		document.getElementById("b3").disabled = true;
 		flag = 0;
@@ -248,8 +248,8 @@ function myfunc_5() {
 	}
 }
 
-function myfunc_6() {
-	if (flag == 1) {
+const myfunc_6 = () => {
+	if (flag === 1) {
 		document.getElementById("b4").value = "🍌";
 		document.getElementById("b4").disabled = true;
 		flag = 0;
@@ -261,8 +261,8 @@ function myfunc_6() {
 	}
 }
 
-function myfunc_7() {
-	if (flag == 1) {
+const myfunc_7 = () => {
+	if (flag === 1) {
 		document.getElementById("b5").value = "🍌";
 		document.getElementById("b5").disabled = true;
 		flag = 0;
@@ -274,8 +274,8 @@ function myfunc_7() {
 	}
 }
 
-function myfunc_8() {
-	if (flag == 1) {
+const myfunc_8 = () => {
+	if (flag === 1) {
 		document.getElementById("b6").value = "🍌";
 		document.getElementById("b6").disabled = true;
 		flag = 0;
@@ -287,8 +287,8 @@ function myfunc_8() {
 	}
 }
 
-function myfunc_9() {
-	if (flag == 1) {
+const myfunc_9 = () => {
+	if (flag === 1) {
 		document.getElementById("b7").value = "🍌";
 		document.getElementById("b7").disabled = true;
 		flag = 0;
@@ -300,8 +300,8 @@ function myfunc_9() {
 	}
 }
 
-function myfunc_10() {
-	if (flag == 1) {
+const myfunc_10 = () => {
+	if (flag === 1) {
 		document.getElementById("b8").value = "🍌";
 		document.getElementById("b8").disabled = true;
 		flag = 0;
@@ -313,8 +313,8 @@ function myfunc_10() {
 	}
 }
 
-function myfunc_11() {
-	if (flag == 1) {
+const myfunc_11 = () => {
+	if (flag === 1) {
 		document.getElementById("b9").value = "🍌";
 		document.getElementById("b9").disabled = true;
 		flag = 0;
@@ -325,3 +325,15 @@ function myfunc_11() {
 		flag = 1;
 	}
 }
+
+window.myfunc = myfunc
+window.myfunc_2 = myfunc_2
+window.myfunc_3 = myfunc_3
+window.myfunc_4 = myfunc_4
+window.myfunc_5 = myfunc_5
+window.myfunc_6 = myfunc_6
+window.myfunc_7 = myfunc_7
+window.myfunc_8 = myfunc_8
+window.myfunc_9 = myfunc_9
+window.myfunc_10 = myfunc_10
+window.myfunc_11 = myfunc_11
