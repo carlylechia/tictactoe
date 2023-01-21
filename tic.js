@@ -185,8 +185,7 @@ const myfunc = () => {
 		b5 === '🍄') && (b6 === '🍌' || b6 === '🍄') &&
 		(b7 === '🍌' || b7 === '🍄') && (b8 === '🍌' ||
 		b8 === '🍄') && (b9 === '🍌' || b9 === '🍄')) {
-			document.getElementById('print')
-				.innerHTML = "Match Tie";
+			document.getElementById('print').innerHTML = "Match Tie";
 			// window.alert('Match Tie');
 	}
 
